@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yepsolutions.myv600application"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/main_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/main_icon"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.yepsolutions.myv600application.home_page.HelpActivity" />
+        <activity android:name="com.yepsolutions.myv600application.home_page.SettingsActivity" />
+        <activity android:name="com.yepsolutions.myv600application.home_page.MapActivity" />
+        <activity android:name="com.yepsolutions.myv600application.home_page.UserActivity" />
+        <activity
+            android:name="com.yepsolutions.myv600application.home_page.ScheduleActivity"
+            android:label="@string/title_activity_schedule"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.yepsolutions.myv600application.home_page.ManageCreditActivity"
+            android:label="@string/title_activity_manage_credit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.yepsolutions.myv600application.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.yepsolutions.myv600application.UserAreaActivity" />
+        <activity android:name="com.yepsolutions.myv600application.MainActivity" />
+        <activity android:name="com.yepsolutions.myv600application.RegisterActivity" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.yepsolutions.myv600application.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>
