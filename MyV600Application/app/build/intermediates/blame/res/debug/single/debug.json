@@ -16,12 +16,12 @@
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
-        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
-    },
-    {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_hide_motion_spec.xml.flat",
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\397f7af66ca952bba61c1678b558e8c6\\res\\animator\\mtrl_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_bottom_navigation_item_background.xml.flat",
@@ -52,12 +52,12 @@
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\397f7af66ca952bba61c1678b558e8c6\\res\\drawable-xhdpi-v4\\design_ic_visibility_off.png"
+    },
+    {
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -72,12 +72,12 @@
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
-        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
-    },
-    {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-mdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
@@ -132,12 +132,12 @@
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\397f7af66ca952bba61c1678b558e8c6\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
     },
     {
-        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
-        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
-    },
-    {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\color-v23\\abc_tint_default.xml"
+    },
+    {
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
+        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -148,12 +148,12 @@
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\397f7af66ca952bba61c1678b558e8c6\\res\\color\\mtrl_chip_background_color.xml"
     },
     {
-        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
@@ -204,12 +204,12 @@
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
-        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
-    },
-    {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
+        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -220,32 +220,32 @@
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_show_motion_spec.xml.flat",
-        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\397f7af66ca952bba61c1678b558e8c6\\res\\animator\\mtrl_fab_show_motion_spec.xml"
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_show_motion_spec.xml.flat",
+        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\397f7af66ca952bba61c1678b558e8c6\\res\\animator\\mtrl_fab_show_motion_spec.xml"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
+        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\a1af02cae9744557b4aa7ed9638893d1\\res\\drawable\\notification_tile_bg.xml"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_out.xml.flat",
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\397f7af66ca952bba61c1678b558e8c6\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
-        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\a1af02cae9744557b4aa7ed9638893d1\\res\\drawable\\notification_tile_bg.xml"
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -256,12 +256,12 @@
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_icon_color_selector.xml.flat",
-        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\397f7af66ca952bba61c1678b558e8c6\\res\\color\\mtrl_tabs_icon_color_selector.xml"
-    },
-    {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_icon_color_selector.xml.flat",
+        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\397f7af66ca952bba61c1678b558e8c6\\res\\color\\mtrl_tabs_icon_color_selector.xml"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
@@ -278,6 +278,10 @@
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_help.xml.flat",
         "source": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\src\\main\\res\\layout\\activity_help.xml"
+    },
+    {
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fundo_caixa_texto.xml.flat",
+        "source": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\src\\main\\res\\drawable\\fundo_caixa_texto.xml"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_expanded_menu_layout.xml.flat",
@@ -384,12 +388,12 @@
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
-        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
-    },
-    {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_top.xml.flat",
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_edittext.xml.flat",
@@ -806,6 +810,10 @@
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable_create_user.png.flat",
+        "source": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\src\\main\\res\\drawable\\create_user.png"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -1340,6 +1348,10 @@
         "source": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\src\\main\\res\\layout\\activity_login_form.xml"
     },
     {
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fundo_botao.xml.flat",
+        "source": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\src\\main\\res\\drawable\\fundo_botao.xml"
+    },
+    {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
@@ -1822,6 +1834,10 @@
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\dparedes\\.gradle\\caches\\transforms-2\\files-2.1\\fa50d6b7d7938c31b2e241d67b59b502\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fundo_degrade.xml.flat",
+        "source": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\src\\main\\res\\drawable\\fundo_degrade.xml"
     },
     {
         "merged": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",

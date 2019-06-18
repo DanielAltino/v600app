@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
+    abi="x86"
     api-level="22"
-    build-mode="COLD"
-    density="xhdpi"
+    build-mode="HOT_WARM"
+    density="440dpi"
     format="10"
     plugin-version="3.4.1"
-    timestamp="1560794448171"
+    timestamp="1560875740566"
     token="5549511219037483026"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
@@ -23,9 +23,13 @@
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="C:\Users\dparedes\AndroidStudioProjects\MyV600Application\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
+
     <build
         build-mode="FULL"
-        timestamp="1560793750628"
+        timestamp="1560875421483"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\dparedes\AndroidStudioProjects\MyV600Application\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
@@ -34,10 +38,10 @@
             location="C:\Users\dparedes\AndroidStudioProjects\MyV600Application\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\dparedes\AndroidStudioProjects\MyV600Application\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\dparedes\AndroidStudioProjects\MyV600Application\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\dparedes\AndroidStudioProjects\MyV600Application\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="C:\Users\dparedes\AndroidStudioProjects\MyV600Application\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\dparedes\AndroidStudioProjects\MyV600Application\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -65,16 +69,12 @@
             type="SPLIT" />
     </build>
     <build
-        build-mode="COLD"
-        timestamp="1560793796197"
-        verifier="COLD_SWAP_REQUESTED" >
+        build-mode="HOT_WARM"
+        timestamp="1560875740566"
+        verifier="COMPATIBLE" >
         <artifact
-            location="C:\Users\dparedes\AndroidStudioProjects\MyV600Application\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="C:\Users\dparedes\AndroidStudioProjects\MyV600Application\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
-    <build
-        build-mode="COLD"
-        timestamp="1560794448171"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

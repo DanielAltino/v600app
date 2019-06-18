@@ -998,12 +998,16 @@ drawable avd_show_password
 drawable buy_ticket
 drawable buy_tickets
 drawable buy_wallet
+drawable create_user
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable fundo_botao
+drawable fundo_caixa_texto
+drawable fundo_degrade
 drawable help
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1142,6 +1146,7 @@ id id_text_user
 id id_text_userPage
 id ifRoom
 id image
+id imageView2
 id img_buy_ticket
 id img_help
 id img_map
@@ -1195,6 +1200,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id search_badge
 id search_bar

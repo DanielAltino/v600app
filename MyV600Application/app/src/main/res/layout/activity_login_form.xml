@@ -4,7 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".LoginActivity">
+    <!--android:background="@drawable/fundo_degrade"-->
+
+    app:layout_constraintBottom_toTopOf="@+id/etUsername"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0"
+
 
     <ImageView
         android:id="@+id/id_img_logo"
@@ -18,11 +31,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.265" />
-        app:layout_constraintBottom_toTopOf="@+id/etUsername"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+
 
     <TextView
         android:id="@+id/forgot_password"
@@ -33,6 +42,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/forgot_password"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -50,6 +61,8 @@
         android:layout_marginBottom="8dp"
         android:clickable="true"
         android:text="@string/sign_up"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -64,10 +77,13 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
-
+        android:background="@drawable/fundo_caixa_texto"
         android:hint="@string/login"
         android:inputType="textEmailAddress"
+        android:padding="12dp"
         android:selectAllOnFocus="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -80,13 +96,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-
         android:layout_marginBottom="8dp"
+        android:background="@drawable/fundo_caixa_texto"
         android:hint="@string/prompt_password"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
+        android:padding="12dp"
         android:selectAllOnFocus="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -102,12 +121,13 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/fundo_botao"
         android:text="@string/login"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/etUsername"
-        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword"
-        app:layout_constraintVertical_bias="0.143" />
+        app:layout_constraintVertical_bias="0.447" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

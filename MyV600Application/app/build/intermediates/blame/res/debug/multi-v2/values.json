@@ -85,9 +85,11 @@
                 {
                     "source": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
-                        "startLines": "-1,-1,-1",
-                        "startColumns": "-1,-1,-1",
-                        "startOffsets": "-1,-1,-1"
+                        "startLines": "4,-1,3",
+                        "startColumns": "4,-1,4",
+                        "startOffsets": "157,-1,105",
+                        "endColumns": "45,-1,50",
+                        "endOffsets": "198,-1,151"
                     },
                     "to": {
                         "startLines": "192,193,194",
@@ -178,11 +180,9 @@
                 {
                     "source": "C:\\Users\\dparedes\\AndroidStudioProjects\\MyV600Application\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,17,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,4,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,781,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "endColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,37,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "endOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,814,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "566,567,570,573,576,577,579,580,581,582,589,590,591,593,594,595,597,598,599,600",
