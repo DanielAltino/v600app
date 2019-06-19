@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home_page.UserActivity">
+    tools:context=".home_page.SettingsActivity">
 
     <TextView
         android:id="@+id/id_text_userPage"
-        android:layout_width="144dp"
-        android:layout_height="103dp"
+        android:layout_width="198dp"
+        android:layout_height="77dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="User Page"
+        android:text="Settings Page"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.27" />
@@ -34,4 +34,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_text_userPage"
         app:layout_constraintVertical_bias="0.019" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
