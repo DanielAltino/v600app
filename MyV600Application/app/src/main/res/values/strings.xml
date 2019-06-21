@@ -9,6 +9,9 @@
     <string name="forgot_password">"Forgot Password?"</string>
     <string name="sign_up">"Sign up"</string>
     <string name="sign_in">"Sign in"</string>
+    <string name="action_config">"Settings"</string>
+    <string name="action_log_out">"Log Out"</string>
+
 
     <string name="action_sign_in_short">Sign in short</string>
     <string name="title_activity_manage_credit">ManageCreditActivity</string>
@@ -23,4 +26,20 @@
     <string name="email">Email</string>
     <string name="forgot_text_view">Please enter your email to search for your account.</string>
     <string name="forgot_edit">Email</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>
