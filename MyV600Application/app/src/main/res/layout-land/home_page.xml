@@ -26,7 +26,7 @@
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196"
+        app:layout_constraintVertical_bias="0.222"
         app:srcCompat="@drawable/user" />
 
     <ImageView
@@ -41,7 +41,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196"
+        app:layout_constraintVertical_bias="0.222"
         app:srcCompat="@drawable/buy_ticket" />
 
     <ImageView
@@ -55,10 +55,10 @@
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/img_settings"
-        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_text_user"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.018"
         app:srcCompat="@drawable/map" />
 
     <ImageView
@@ -73,7 +73,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_text_buy"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.018"
         app:srcCompat="@drawable/settings" />
 
     <ImageView
@@ -90,7 +90,7 @@
         app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toEndOf="@+id/img_buy_ticket"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196"
+        app:layout_constraintVertical_bias="0.222"
         app:srcCompat="@drawable/schedule" />
 
     <ImageView
@@ -107,7 +107,7 @@
         app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toEndOf="@+id/img_settings"
         app:layout_constraintTop_toBottomOf="@+id/id_text_schedule"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.018"
         app:srcCompat="@drawable/help" />
 
     <TextView
@@ -136,7 +136,6 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_buy_ticket"
         app:layout_constraintVertical_bias="0.0" />
@@ -153,15 +152,15 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toEndOf="@+id/id_text_buy"
         app:layout_constraintTop_toBottomOf="@+id/img_schedule"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/id_text_map"
-        android:layout_width="58dp"
-        android:layout_height="25dp"
+        android:layout_width="47dp"
+        android:layout_height="23dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -170,10 +169,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_map"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.078" />
 
     <TextView
         android:id="@+id/id_text_settings"
@@ -187,7 +186,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_settings"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.053" />
 
     <TextView
         android:id="@+id/id_text_help"
@@ -204,6 +203,6 @@
         app:layout_constraintHorizontal_bias="0.811"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_help"
-        app:layout_constraintVertical_bias="0.011" />
+        app:layout_constraintVertical_bias="0.066" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

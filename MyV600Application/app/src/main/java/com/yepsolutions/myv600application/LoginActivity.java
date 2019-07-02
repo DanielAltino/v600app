@@ -43,6 +43,7 @@ public class LoginActivity extends Activity {
                 final String password = etPassword.getText().toString();
                 Intent HomePage = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(HomePage);
+                finish();
 
                 /*
                 Response.Listener<String> responseListener = new Response.Listener<String>() {

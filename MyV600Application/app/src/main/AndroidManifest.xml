@@ -11,9 +11,6 @@
         android:roundIcon="@mipmap/main_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings"></activity>
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".home_page.HelpActivity" />
         <activity android:name=".home_page.SettingsActivity" />

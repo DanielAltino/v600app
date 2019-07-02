@@ -40,7 +40,12 @@ public class MainActivity extends AppCompatActivity {
 
         //Configurando toolbar
         toolbar = (Toolbar) findViewById(R.id.id_toolbar);
+        toolbar.setSubtitle("");
         setSupportActionBar(toolbar);
+
+        //botao voltar
+        getActionBar().setDisplayHomeAsUpEnabled(true); //Mostrar o botão
+
 
         button_Manage_Credit = findViewById(R.id.img_buy_ticket);
         button_Schedule = findViewById(R.id.img_schedule);
@@ -96,8 +101,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
+        //toobar
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_main, menu);
+
 
         return true;
     }

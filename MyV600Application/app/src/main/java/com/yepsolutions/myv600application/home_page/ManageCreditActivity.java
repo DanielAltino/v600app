@@ -13,9 +13,16 @@ import android.view.View;
 
 public class ManageCreditActivity extends AppCompatActivity {
 
+    private Toolbar toolbar;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage_credit);
+
+        toolbar = (Toolbar) findViewById(R.id.id_toolbar);
+        setSupportActionBar(toolbar);
+
     }
 }
