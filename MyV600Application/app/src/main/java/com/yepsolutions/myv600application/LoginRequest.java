@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 public class LoginRequest extends StringRequest {
 
-    private static final String LOGIN_REQUEST_URL = "https://yepsolutionsv600application.000webhostapp.com/Login.php";
+    private static final String LOGIN_REQUEST_URL = "https://forgotpasswordlearningforyep.000webhostapp.com/Login.php";
     //private static final String LOGIN_REQUEST_URL = "http://localhost/yep_v600app/Register.php";
     private Map<String, String> params;
 

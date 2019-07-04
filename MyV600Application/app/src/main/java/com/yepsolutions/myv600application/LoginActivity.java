@@ -46,11 +46,11 @@ public class LoginActivity extends Activity {
                 final String username = etUsername.getText().toString();
                 final String password = etPassword.getText().toString();
 
-                Intent HomePage = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(HomePage);
+                //Intent HomePage = new Intent(LoginActivity.this, MainActivity.class);
+                //startActivity(HomePage);
 
 
-                /*
+
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -81,7 +81,7 @@ public class LoginActivity extends Activity {
                 LoginRequest loginRequest = new LoginRequest(username, password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
                 queue.add(loginRequest);
-           */ }
+            }
         });
 
         forgotPassword.setOnClickListener(new View.OnClickListener() {
