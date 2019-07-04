@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <include
+        android:id="@+id/id_toolbar"
+        layout="@layout/toolbar">
+    </include>
+
     <Button
         android:id="@+id/id_button_ok_voltar"
         android:layout_width="wrap_content"

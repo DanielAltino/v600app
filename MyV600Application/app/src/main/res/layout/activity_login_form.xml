@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.001"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_forgot_password" />
+        app:layout_constraintTop_toBottomOf="@+id/tvForgotPassword" />
 
     <ImageView
         android:id="@+id/id_img_logo"
@@ -50,7 +50,7 @@
 
 
     <TextView
-        android:id="@+id/id_forgot_password"
+        android:id="@+id/tvForgotPassword"
         android:layout_width="126dp"
         android:layout_height="27dp"
         android:layout_marginStart="24dp"

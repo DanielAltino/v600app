@@ -7,6 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".home_page.ScheduleActivity" >
 
+    <include
+        android:id="@+id/id_toolbar"
+        layout="@layout/toolbar">
+    </include>
+
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="wrap_content"

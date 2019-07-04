@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".home_page.MapActivity">
 
+    <include
+        android:id="@+id/id_toolbar"
+        layout="@layout/toolbar">
+    </include>
+
     <TextView
         android:id="@+id/id_text_userPage"
         android:layout_width="144dp"

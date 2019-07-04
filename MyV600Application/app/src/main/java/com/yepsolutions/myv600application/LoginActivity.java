@@ -7,6 +7,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 public class LoginActivity extends Activity {
 
@@ -19,20 +30,13 @@ public class LoginActivity extends Activity {
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
         final Button bLogin = (Button) findViewById(R.id.bLogin);
         final TextView registerLink = (TextView) findViewById(R.id.tvRegisterHere);
-        final TextView forgotPasswordText = (TextView) findViewById(R.id.id_forgot_password);
+        final TextView forgotPassword = (TextView)findViewById(R.id.tvForgotPassword);
 
         registerLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent registerIntent = new Intent(LoginActivity.this, RegisterActivity.class);//pega aqui
+                Intent registerIntent = new Intent(LoginActivity.this, RegisterActivity.class);
                 LoginActivity.this.startActivity(registerIntent);
-            }
-        });
-
-        forgotPasswordText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, ForgotPasswordActivity.class));
             }
         });
 
@@ -41,9 +45,10 @@ public class LoginActivity extends Activity {
             public void onClick(View v) {
                 final String username = etUsername.getText().toString();
                 final String password = etPassword.getText().toString();
+
                 Intent HomePage = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(HomePage);
-                finish();
+
 
                 /*
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
@@ -52,17 +57,12 @@ public class LoginActivity extends Activity {
                         try {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
-                            Toast.makeText(LoginActivity.this, "Logging in", Toast.LENGTH_SHORT).show();
 
                             if(success){
+                                Toast.makeText(LoginActivity.this, "LOGINING", Toast.LENGTH_SHORT).show();
                                 String name = jsonResponse.getString("name");
                                 Intent HomePage = new Intent(LoginActivity.this, MainActivity.class);
                                 startActivity(HomePage);
-                                //intent.putExtra("name", name);
-                                //intent.putExtra("username", username);
-                                //intent.putExtra("age", age);
-
-                                //MainActivity.this.startActivity(intent);
                             }
                             else{
                                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
@@ -81,7 +81,15 @@ public class LoginActivity extends Activity {
                 LoginRequest loginRequest = new LoginRequest(username, password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
                 queue.add(loginRequest);
-            */}
+           */ }
+        });
+
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent registerIntent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
+                LoginActivity.this.startActivity(registerIntent);
+            }
         });
     }
 }
