@@ -98,6 +98,14 @@ public class ManageCreditActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage_credit);
 
+
+        super.onResume();
+        try {
+            connectBT();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         toolbar = (Toolbar) findViewById(R.id.id_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -118,6 +126,7 @@ public class ManageCreditActivity extends AppCompatActivity {
         });
 
     }
+
 
     void FindBluetoothDevice(){
 
@@ -299,6 +308,11 @@ public class ManageCreditActivity extends AppCompatActivity {
                 return true;
             case android.R.id.home:
                 onBackPressed();
+                try {
+                    disconnectBT();
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
