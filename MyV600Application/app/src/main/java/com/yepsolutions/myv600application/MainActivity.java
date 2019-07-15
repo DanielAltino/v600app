@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.id_action_setings:
+            case R.id.id_action_settings:
                 return true;
             case R.id.id_action_log_out:
                 logOut();

@@ -6,34 +6,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/id_text_ticket"
+        android:layout_width="107dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/buy_ticket"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_img_buy_ticket"
+        app:layout_constraintVertical_bias="0.012" />
+
     <include
         android:id="@+id/id_toolbar"
         layout="@layout/toolbar">
     </include>
 
     <ImageView
-        android:id="@+id/id_buy_wallet"
-        android:layout_width="215dp"
-        android:layout_height="215dp"
+        android:id="@+id/id_img_buy_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="396dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/buy_wallet" />
-
-    <ImageView
-        android:id="@+id/id_buy_ticket"
-        android:layout_width="215dp"
-        android:layout_height="215dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.762"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_toolbar"
+        app:layout_constraintVertical_bias="0.365"
+        app:srcCompat="@drawable/ticket" />
+
+    <TextView
+        android:id="@+id/lblPrinterName"
+        android:layout_width="218dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Connect to the printer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id_img_buy_ticket"
+        app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/buy_tickets" />
+        app:layout_constraintVertical_bias="0.18" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-       >
+    >
 
-    <item android:id="@+id/id_action_settings"
-        android:title="@string/action_config"
+    <item android:id="@+id/id_action_connect"
+        android:title="@string/action_connect"
         android:orderInCategory="100"
         app:showAsAction="never"
         />
 
     <item
-        android:id="@+id/id_action_log_out"
+        android:id="@+id/id_action_disconnect"
         android:orderInCategory="200"
-        android:title="@string/action_log_out"
+        android:title="@string/action_disconnect"
         app:showAsAction="never" />
 
 </menu>
