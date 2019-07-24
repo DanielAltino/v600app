@@ -1,15 +1,15 @@
 package com.yepsolutions.myv600application.USB_Cam.dual_cam;
 
-
 import android.annotation.SuppressLint;
 import android.graphics.ImageFormat;
 import android.graphics.Rect;
 import android.graphics.SurfaceTexture;
 import android.graphics.YuvImage;
 import android.hardware.usb.UsbDevice;
+import android.media.AudioRecord;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Surface;
@@ -18,7 +18,12 @@ import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
+//import androidx.appcompat.app.AppCompatActivity;
+
+
+import com.serenegiant.usb.CameraDialog;
 import com.serenegiant.usb.DeviceFilter;
 import com.serenegiant.usb.IFrameCallback;
 import com.serenegiant.usb.Size;
@@ -26,8 +31,10 @@ import com.serenegiant.usb.USBMonitor;
 import com.serenegiant.usb.USBMonitor.OnDeviceConnectListener;
 import com.serenegiant.usb.USBMonitor.UsbControlBlock;
 import com.serenegiant.usb.UVCCamera;
-import com.serenegiant.widget.UVCCameraTextureView;
 import com.shenyaocn.android.Encoder.CameraRecorder;
+import com.yepsolutions.myv600application.R;
+import com.yepsolutions.myv600application.USB_Cam.widget.UVCCameraTextureView;
+import com.yepsolutions.myv600application.USB_Cam.dual_cam.Helper;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -38,8 +45,14 @@ import java.util.Date;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
-public final class MainActivityCAM extends AppCompatActivity{
+import static com.yepsolutions.myv600application.R.id.*;
+
+
+public final class MainActivityCAM extends AppCompatActivity {
     private static final boolean DEBUG = true;	// 用于显示调试信息
     private static final String TAG = "MainActivity";
 
@@ -79,7 +92,7 @@ public final class MainActivityCAM extends AppCompatActivity{
 
         Window window = getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON); // 避免屏幕关闭
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_usb_cam);
         com.rscja.deviceapi.OTG.getInstance().on(); //打开OTG
         mUVCCameraViewL = (UVCCameraTextureView)findViewById(R.id.camera_view_L);
         mUVCCameraViewL.setAspectRatio(UVCCamera.DEFAULT_PREVIEW_WIDTH / (float)UVCCamera.DEFAULT_PREVIEW_HEIGHT);
