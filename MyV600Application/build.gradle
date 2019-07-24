@@ -18,10 +18,18 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven { url 'https://maven.google.com' }
+        maven { url 'http://raw.github.com/saki4510t/libcommon/master/repository/' }
+        flatDir {
+            dirs 'libs'
+        }
+
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+ext {
+
 }

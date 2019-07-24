@@ -38,6 +38,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Set;
 import java.util.UUID;
 
@@ -45,6 +48,7 @@ import java.util.UUID;
 public class ManageCreditActivity extends AppCompatActivity {
 
 
+    private static final int SOLICITAR_ATIVACAO = 1;
     private Toolbar toolbar;
     private ImageView buy_ticket;
     /*public PrinterActivity printer = new PrinterActivity();
@@ -74,9 +78,7 @@ public class ManageCreditActivity extends AppCompatActivity {
     }*/
 
 
-
-
-    BluetoothAdapter bluetoothAdapter;
+    BluetoothAdapter bluetoothAdapter = null;
     BluetoothSocket bluetoothSocket;
     BluetoothDevice bluetoothDevice;
 
@@ -98,18 +100,24 @@ public class ManageCreditActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage_credit);
 
-
-        super.onResume();
-        try {
-            connectBT();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
         toolbar = (Toolbar) findViewById(R.id.id_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+
+        bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+
+        if (bluetoothAdapter == null) {
+            Toast.makeText(this, "Bluetooth off", Toast.LENGTH_SHORT).show();
+        } else if (!bluetoothAdapter.isEnabled()) {
+            Intent enableBluetoothIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+            startActivityForResult(enableBluetoothIntent, SOLICITAR_ATIVACAO);
+            try {
+                connectBT();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
 
         lblPrinterName = (TextView) findViewById(R.id.lblPrinterName);
         img_Ticket = (ImageView) findViewById(R.id.id_img_buy_ticket);
@@ -117,9 +125,9 @@ public class ManageCreditActivity extends AppCompatActivity {
         img_Ticket.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try{
+                try {
                     printData();
-                }catch (Exception ex){
+                } catch (Exception ex) {
                     ex.printStackTrace();
                 }
             }
@@ -128,103 +136,104 @@ public class ManageCreditActivity extends AppCompatActivity {
     }
 
 
-    void FindBluetoothDevice(){
+    void FindBluetoothDevice() {
 
-        try{
+        try {
 
             bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-            if(bluetoothAdapter==null){
+            if (bluetoothAdapter == null) {
                 lblPrinterName.setText("No Bluetooth Adapter found");
             }
-            if(bluetoothAdapter.isEnabled()){
+            if (bluetoothAdapter.isEnabled()) {
                 Intent enableBT = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-                startActivityForResult(enableBT,0);
+                startActivityForResult(enableBT, 0);
             }
 
             Set<BluetoothDevice> pairedDevice = bluetoothAdapter.getBondedDevices();
 
-            if(pairedDevice.size()>0){
-                for(BluetoothDevice pairedDev:pairedDevice){
+            if (pairedDevice.size() > 0) {
+                for (BluetoothDevice pairedDev : pairedDevice) {
 
                     // My Bluetoth printer name is BTP_F09F1A
-                    if(pairedDev.getName().equals("SW_54BA")){
-                        bluetoothDevice=pairedDev;
-                        lblPrinterName.setText("Bluetooth Printer Attached: "+pairedDev.getName());
+                    if (pairedDev.getName().equals("SW_54BA")) {
+                        bluetoothDevice = pairedDev;
+                        lblPrinterName.setText("Bluetooth Printer Attached: " + pairedDev.getName());
                         break;
                     }
                 }
             }
 
-            lblPrinterName.setText("Bluetooth Printer Attached");
-        }catch(Exception ex){
+
+        } catch (Exception ex) {
             ex.printStackTrace();
+            lblPrinterName.setText("Bluetooth Printer not found");
         }
 
     }
 
     // Open Bluetooth Printer
 
-    void openBluetoothPrinter() throws IOException{
-        try{
+    void openBluetoothPrinter() throws IOException {
+        try {
 
             //Standard uuid from string //
             UUID uuidSting = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb");
-            bluetoothSocket=bluetoothDevice.createRfcommSocketToServiceRecord(uuidSting);
+            bluetoothSocket = bluetoothDevice.createRfcommSocketToServiceRecord(uuidSting);
             bluetoothSocket.connect();
-            outputStream=bluetoothSocket.getOutputStream();
-            inputStream=bluetoothSocket.getInputStream();
+            outputStream = bluetoothSocket.getOutputStream();
+            inputStream = bluetoothSocket.getInputStream();
 
             beginListenData();
 
-        }catch (Exception ex){
-
+        } catch (Exception ex) {
+            lblPrinterName.setText("Bluetooth Printer not found");
         }
     }
 
-    void beginListenData(){
-        try{
+    void beginListenData() {
+        try {
 
-            final Handler handler =new Handler();
-            final byte delimiter=10;
-            stopWorker =false;
-            readBufferPosition=0;
+            final Handler handler = new Handler();
+            final byte delimiter = 10;
+            stopWorker = false;
+            readBufferPosition = 0;
             readBuffer = new byte[1024];
 
-            thread=new Thread(new Runnable() {
+            thread = new Thread(new Runnable() {
                 @Override
                 public void run() {
 
-                    while (!Thread.currentThread().isInterrupted() && !stopWorker){
-                        try{
+                    while (!Thread.currentThread().isInterrupted() && !stopWorker) {
+                        try {
                             int byteAvailable = inputStream.available();
-                            if(byteAvailable>0){
+                            if (byteAvailable > 0) {
                                 byte[] packetByte = new byte[byteAvailable];
                                 inputStream.read(packetByte);
 
-                                for(int i=0; i<byteAvailable; i++){
+                                for (int i = 0; i < byteAvailable; i++) {
                                     byte b = packetByte[i];
-                                    if(b==delimiter){
+                                    if (b == delimiter) {
                                         byte[] encodedByte = new byte[readBufferPosition];
                                         System.arraycopy(
-                                                readBuffer,0,
-                                                encodedByte,0,
+                                                readBuffer, 0,
+                                                encodedByte, 0,
                                                 encodedByte.length
                                         );
-                                        final String data = new String(encodedByte,"US-ASCII");
-                                        readBufferPosition=0;
+                                        final String data = new String(encodedByte, "US-ASCII");
+                                        readBufferPosition = 0;
                                         handler.post(new Runnable() {
                                             @Override
                                             public void run() {
                                                 lblPrinterName.setText(data);
                                             }
                                         });
-                                    }else{
-                                        readBuffer[readBufferPosition++]=b;
+                                    } else {
+                                        readBuffer[readBufferPosition++] = b;
                                     }
                                 }
                             }
-                        }catch(Exception ex){
-                            stopWorker=true;
+                        } catch (Exception ex) {
+                            stopWorker = true;
                         }
                     }
 
@@ -232,37 +241,42 @@ public class ManageCreditActivity extends AppCompatActivity {
             });
 
             thread.start();
-        }catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
 
     // Printing Text to Bluetooth Printer //
-    void printData() throws  IOException{
-        try{
+    void printData() throws IOException {
+        try {
 
-            String msg = "Imprimindo\n" +
-                    ".....................................................................\n" +
-                    "Passagem.....................................................R$ 12,75\n" +
-                    "De Itajuba para Sao Lourenco\n"+
-                    "Fim da impressao\n.\n.";
-            msg+="\n";
+            String msg =
+                    "...............................YEP SOLUTIONS.........................\n" +
+                            ".....................................................................\n" +
+                            "CNPJ: 11.222.333/4444-55\n" +
+                            getDateTime() + "\n"+
+                            "............................CUPOM FISCAL .............................\n" +
+                            "Passagem.....................................................R$ 12,75\n" +
+                            "De Itajuba para Sao Lourenco\n" +
+                            "Expresso Gardenia\n" +
+                            "Fim da impressao\n.\n.";
+            msg += "\n";
             outputStream.write(msg.getBytes());
             lblPrinterName.setText("Printing Text...");
-        }catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
 
     // Disconnect Printer //
-    void disconnectBT() throws IOException{
+    void disconnectBT() throws IOException {
         try {
-            stopWorker=true;
+            stopWorker = true;
             outputStream.close();
             inputStream.close();
             bluetoothSocket.close();
             lblPrinterName.setText("Printer Disconnected.");
-        }catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
@@ -313,12 +327,19 @@ public class ManageCreditActivity extends AppCompatActivity {
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
+                finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
 
         }
 
+    }
+
+    private String getDateTime() {
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Date date = new Date();
+        return dateFormat.format(date);
     }
 
 }
