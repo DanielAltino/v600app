@@ -6,11 +6,9 @@ import android.graphics.Rect;
 import android.graphics.SurfaceTexture;
 import android.graphics.YuvImage;
 import android.hardware.usb.UsbDevice;
-import android.media.AudioRecord;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Surface;
 import android.view.View;
@@ -18,12 +16,9 @@ import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
-//import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
-
-import com.serenegiant.usb.CameraDialog;
 import com.serenegiant.usb.DeviceFilter;
 import com.serenegiant.usb.IFrameCallback;
 import com.serenegiant.usb.Size;
@@ -34,7 +29,6 @@ import com.serenegiant.usb.UVCCamera;
 import com.shenyaocn.android.Encoder.CameraRecorder;
 import com.yepsolutions.myv600application.R;
 import com.yepsolutions.myv600application.USB_Cam.widget.UVCCameraTextureView;
-import com.yepsolutions.myv600application.USB_Cam.dual_cam.Helper;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -45,11 +39,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
 
-import static com.yepsolutions.myv600application.R.id.*;
+//import androidx.appcompat.app.AppCompatActivity;
+
 
 
 public final class MainActivityCAM extends AppCompatActivity {
@@ -574,7 +566,7 @@ public final class MainActivityCAM extends AppCompatActivity {
                         new YuvImage(buffer, ImageFormat.NV21, size.width, size.height, null).compressToJpeg(new Rect(0, 0, size.width, size.height), 60, snapshotOutStreamL);
                         snapshotOutStreamL.flush();
                         snapshotOutStreamL.close();
-                        Helper.fileSavedProcess(MainActivity.this, snapshotFileNameL);
+                        Helper.fileSavedProcess(MainActivityCAM.this, snapshotFileNameL);
                     } catch (Exception ex) {
                     } finally {
                         snapshotOutStreamL = null;
@@ -612,7 +604,7 @@ public final class MainActivityCAM extends AppCompatActivity {
                         new YuvImage(buffer, ImageFormat.NV21, size.width, size.height, null).compressToJpeg(new Rect(0, 0, size.width, size.height), 60, snapshotOutStreamR);
                         snapshotOutStreamR.flush();
                         snapshotOutStreamR.close();
-                        Helper.fileSavedProcess(MainActivity.this, snapshotFileNameR);
+                        Helper.fileSavedProcess(MainActivityCAM.this, snapshotFileNameR);
                     } catch (Exception ex) {
                     } finally {
                         snapshotOutStreamR = null;

@@ -4,15 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
        >
 
+    <item
+        android:id="@+id/id_action_cam"
+        android:orderInCategory="100"
+        android:title="@string/action_cam"
+        app:showAsAction="never" />
+
     <item android:id="@+id/id_action_settings"
         android:title="@string/action_config"
-        android:orderInCategory="100"
+        android:orderInCategory="200"
         app:showAsAction="never"
         />
 
     <item
         android:id="@+id/id_action_log_out"
-        android:orderInCategory="200"
+        android:orderInCategory="300"
         android:title="@string/action_log_out"
         app:showAsAction="never" />
 

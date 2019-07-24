@@ -14,6 +14,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.yepsolutions.myv600application.USB_Cam.dual_cam.MainActivityCAM;
 import com.yepsolutions.myv600application.home_page.HelpActivity;
 import com.yepsolutions.myv600application.home_page.ManageCreditActivity;
 import com.yepsolutions.myv600application.home_page.MapActivity;
@@ -109,6 +110,9 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.id_action_log_out:
                 logOut();
+                return true;
+            case R.id.id_action_cam:
+                startActivity(new Intent(MainActivity.this, MainActivityCAM.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

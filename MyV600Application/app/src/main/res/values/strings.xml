@@ -11,6 +11,7 @@
     <string name="sign_in">"Sign in"</string>
     <string name="action_config">"Settings"</string>
     <string name="action_log_out">"Log Out"</string>
+    <string name="action_cam">"Camera"</string>
     <string name="action_connect">"Connect the Printer"</string>
     <string name="action_disconnect">"Disconnect the Printer"</string>
 
