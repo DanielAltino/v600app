@@ -7,17 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import androidx.appcompat.app.AlertDialog;
-
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.toolbox.Volley;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 public class LoginActivity extends Activity {
 
@@ -30,7 +19,7 @@ public class LoginActivity extends Activity {
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
         final Button bLogin = (Button) findViewById(R.id.bLogin);
         final TextView registerLink = (TextView) findViewById(R.id.tvRegisterHere);
-        final TextView forgotPassword = (TextView)findViewById(R.id.tvForgotPassword);
+        final TextView forgotPassword = (TextView) findViewById(R.id.tvForgotPassword);
 
         registerLink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,12 +35,13 @@ public class LoginActivity extends Activity {
                 final String username = etUsername.getText().toString();
                 final String password = etPassword.getText().toString();
 
-                //Intent HomePage = new Intent(LoginActivity.this, MainActivity.class);
-                //startActivity(HomePage);
+                //Logar sem senha
+                Intent HomePage = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(HomePage);
 
 
-
-                Response.Listener<String> responseListener = new Response.Listener<String>() {
+                //Comente aqui para logar sem senha
+                /*Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try {
@@ -81,6 +71,8 @@ public class LoginActivity extends Activity {
                 LoginRequest loginRequest = new LoginRequest(username, password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
                 queue.add(loginRequest);
+                //ate aqui
+                */
             }
         });
 

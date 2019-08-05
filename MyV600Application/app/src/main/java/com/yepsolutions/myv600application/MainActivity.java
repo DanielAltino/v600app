@@ -1,23 +1,22 @@
 package com.yepsolutions.myv600application;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.content.Intent;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.yepsolutions.myv600application.GPS.MapsActivity;
 import com.yepsolutions.myv600application.USB_Cam.dual_cam.MainActivityCAM;
 import com.yepsolutions.myv600application.home_page.HelpActivity;
 import com.yepsolutions.myv600application.home_page.ManageCreditActivity;
-import com.yepsolutions.myv600application.home_page.MapActivity;
 import com.yepsolutions.myv600application.home_page.ScheduleActivity;
 import com.yepsolutions.myv600application.home_page.SettingsActivity;
 import com.yepsolutions.myv600application.home_page.UserActivity;
@@ -74,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         button_Map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, MapActivity.class));
+                startActivity(new Intent(MainActivity.this, MapsActivity.class));
             }
         });
 

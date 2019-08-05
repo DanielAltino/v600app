@@ -8,22 +8,22 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.1'
-        
+        classpath 'com.google.gms:google-services:4.2.0'
+
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
-
-    }
+//    dependencies {
+  //      classpath 'com.android.tools.build:gradle:2.3.0'
+//
+  //  }
 }
 
 allprojects {
     repositories {
-        google()
-        jcenter()
-        maven { url 'https://maven.google.com' }
         maven { url 'http://raw.github.com/saki4510t/libcommon/master/repository/' }
+        jcenter()
+        google()
         flatDir {
             dirs 'libs'
         }

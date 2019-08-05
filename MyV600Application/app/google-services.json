@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "788132264535",
+    "firebase_url": "https://v600-app.firebaseio.com",
+    "project_id": "v600-app",
+    "storage_bucket": "v600-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788132264535:android:8dec4a24aeb6c2a5",
+        "android_client_info": {
+          "package_name": "com.yepsolutions.myv600application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788132264535-5t4vr2onl9voa5m11r4rpd8hqc4bmspl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yepsolutions.myv600application",
+            "certificate_hash": "4ce534387a01f8a658855d2bc42654023f91cb05"
+          }
+        },
+        {
+          "client_id": "788132264535-070lon3t5u5dh9iqj1kl9l798eta738e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALo7YSZcD5J_pkKAA1svfNyUlcjwtz6AM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788132264535-070lon3t5u5dh9iqj1kl9l798eta738e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
